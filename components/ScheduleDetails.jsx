@@ -4,7 +4,8 @@ import Midgard from "../components/stages/Midgard";
 import "../src/style/index.module.css";
 import scheduleStyle from "../src/style/schedule.module.css";
 
-export default function ScheduleDetails() {
+export default function ScheduleDetails(props) {
+  console.log(props.stages.Midgard);
   // fetch("http://localhost:8080/schedule")
   //   .then((response) => response.json())
   //   .then((response) => console.log(response))
@@ -17,9 +18,9 @@ export default function ScheduleDetails() {
 
         {/* <h4 className=""></h4> */}
 
-        <p className="">Midgard</p>
-        <p className="">Jotunheim</p>
-        <p className="">Vanaheim</p>
+        <p className="">{props.stages}</p>
+        {/* <p className="">Jotunheim</p>
+        <p className="">Vanaheim</p> */}
         {/* <p className=""></p>
         <p className=""></p>
         <p className=""></p>
